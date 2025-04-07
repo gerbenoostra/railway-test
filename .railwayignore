@@ -1,0 +1,37 @@
+# Ignore everything by default
+*
+
+# Only difference with .gitignore:
+!Dockerfile
+
+# Allow specific directories and files needed for the build
+!container/
+!package_a/manage.py
+!package_a/README.md
+!package_a/package_a/
+!VERSION
+
+# Allow only necessary Python source files
+!package_a/pyproject.toml
+!package_a/poetry.lock
+
+# Exclude unnecessary files even in allowed directories
+**/__pycache__/
+**/.pytest_cache/
+**/.coverage
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.DS_Store
+**/.git/
+**/.gitignore
+**/.venv/
+**/.env
+**/venv/
+**/env/
+**/dist/
+**/build/
+**/eggs/
+**/*.egg-info/
