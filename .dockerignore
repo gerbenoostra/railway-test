@@ -1,9 +1,6 @@
 # Ignore everything by default
 *
 
-# Only difference with .dockerignore:
-!Dockerfile
-
 # Allow specific directories and files needed for the build
 !container/
 !package_a/manage.py
